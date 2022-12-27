@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>线性代数上册 - fexuileのBlog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="fexuileのBlog"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="fexuileのBlog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="原本以为的最后一门考试，结果是倒数第3门"><meta property="og:type" content="blog"><meta property="og:title" content="线性代数上册"><meta property="og:url" content="https://pku.fexuile.cn/2022/12/27/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8A%E5%86%8C/"><meta property="og:site_name" content="fexuileのBlog"><meta property="og:description" content="原本以为的最后一门考试，结果是倒数第3门"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://pku.fexuile.cn/img/og_image.png"><meta property="article:published_time" content="2022-12-27T04:32:41.000Z"><meta property="article:modified_time" content="2022-12-27T04:33:53.381Z"><meta property="article:author" content="fexuile"><meta property="article:tag" content="线代"><meta property="article:tag" content="数学"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://pku.fexuile.cn/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pku.fexuile.cn/2022/12/27/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8A%E5%86%8C/"},"headline":"线性代数上册","image":["https://pku.fexuile.cn/img/og_image.png"],"datePublished":"2022-12-27T04:32:41.000Z","dateModified":"2022-12-27T04:33:53.381Z","author":{"@type":"Person","name":"fexuile"},"publisher":{"@type":"Organization","name":"fexuileのBlog","logo":{"@type":"ImageObject"}},"description":"原本以为的最后一门考试，结果是倒数第3门"}</script><link rel="canonical" href="https://pku.fexuile.cn/2022/12/27/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E4%B8%8A%E5%86%8C/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const $tabMenu = document.querySelector(`a[href="${location.hash}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(location.hash);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.0.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">fexuileのBlog</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-12-27T04:32:41.000Z" title="2022/12/27 12:32:41">2022-12-27</time>发表</span><span class="level-item"><time dateTime="2022-12-27T04:33:53.381Z" title="2022/12/27 12:33:53">2022-12-27</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span><span class="level-item">11 分钟读完 (大约1673个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">线性代数上册</h1><div class="content"><p>原本以为的最后一门考试，结果是倒数第3门</p>
+<span id="more"></span>
+
+<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h3 id="矩阵消元法"><a href="#矩阵消元法" class="headerlink" title="矩阵消元法"></a>矩阵消元法</h3><p><strong>定理1：任何一个矩阵可以变成阶梯形矩阵再变成简化阶梯形矩阵。</strong></p>
+<blockquote>
+<p>主变量：以主元为系数的未知量<br>自由未知量：其余未知量</p>
+</blockquote>
+<p>可行解：符合实际问题的解</p>
+<h3 id="解的情况和判别标准"><a href="#解的情况和判别标准" class="headerlink" title="解的情况和判别标准"></a>解的情况和判别标准</h3><blockquote>
+<p>无解：出现$0=d$<br> 非零行个数$r &lt;n$：无穷多个解<br> 非零行个数$r =n$：唯一解</p>
+</blockquote>
+<p>有解称该线性方程组相容，否则为不相容</p>
+<p>推论1：$n$元齐次线性方程组有非零解的充要条件为$r&lt;n$</p>
+<p>推论2：如果方程个数小于变量个数，则$n$元齐次线性方程组有非零解<br>证明：$r\le s&lt;n$，套用推论1即可。</p>
+<h3 id="数域"><a href="#数域" class="headerlink" title="数域"></a>数域</h3><p>数域：复数集的一个子集$K$,如果满足对于四则运算封闭，那么就是一个数域。其中,$0,1\in K$</p>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h3 id="n-元排列"><a href="#n-元排列" class="headerlink" title="$n$元排列"></a>$n$元排列</h3><p>$\tau(a_1,a_2,\cdots,a_n)$表示一个排列的逆序对数。</p>
+<p>排列的奇偶性等于逆序对数的奇偶性。</p>
+<p>定理1：对换改变$n$元排列的奇偶性。<br>证明：考虑对于两个位置$i,j$，对换所需要的次数是$j-i+j-i+1$，明显是个奇数。又因为对换相邻两个数排列奇偶性改变，所以证毕。</p>
+<p>定理2：任一$n$元排列与排列$12345…n$可以经过一系列对换互变，且该排列奇偶性与对换次数奇偶性相同。<br>证明：略。</p>
+<h3 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h3><p>$\det A=\sum_{i_1,\cdots,i_n}-1^{\tau(i_1,\cdots,i_n)}a_{i_1,1}…a_{i_n,n}$</p>
+<h3 id="行列式的性质"><a href="#行列式的性质" class="headerlink" title="行列式的性质"></a>行列式的性质</h3><p>性质1：$\det A=\det A^T$</p>
+<p>性质2:某一行都是$k$的倍数，那么设该行除以$k$之后的矩阵为$B$，则：$\det A=k\det B$</p>
+<p>性质3：某列为两个列向量相加，那么行列式可以拆成两项。</p>
+<p>性质4：交换两行，行列式反号。</p>
+<p>性质5：两行相同，行列式为$0$</p>
+<h3 id="行列式求解："><a href="#行列式求解：" class="headerlink" title="行列式求解："></a>行列式求解：</h3><ol>
+<li>直接暴力解</li>
+<li>化成上三角</li>
+<li>变成若干的和</li>
+<li>如果各行元素和相同，把后面的列全部加到第一列</li>
+<li>按某行|某列展开</li>
+<li>归纳法</li>
+<li>递推关系式</li>
+<li>升阶法（加行加列）</li>
+<li>利用范德蒙德行列式</li>
+</ol>
+<p>光说的话就是这一堆方法，具体运用起来，考虑如果某一个方法不可行就换一个。</p>
+<p>比如说三对角行列式就先尝试方法4，再试试方法7，发现就可以解出来了。</p>
+<h3 id="克拉默-Cramer-法则"><a href="#克拉默-Cramer-法则" class="headerlink" title="克拉默(Cramer)法则"></a>克拉默(Cramer)法则</h3><p>如何判断一个线性方程组是否有解$\rightarrow |A|\ne 0$。</p>
+<h3 id="拉普拉斯定理"><a href="#拉普拉斯定理" class="headerlink" title="拉普拉斯定理"></a>拉普拉斯定理</h3><p>按照$k$行展开，对应的行列式的值为</p>
+<p>$$<br>|A|=\sum_{j_1,j_2,\cdots,j_k}A\begin{pmatrix}i_1,i_2,\cdots,i_k\j_1,j_2,\cdots,j_k\end{pmatrix}-1^{i_1+\cdots+i_k+j_1+\cdots+j_k}A\begin{pmatrix}i’<em>1,\cdots,i’</em>{n-k}\j’<em>1,\cdots,j’</em>{n-k}\end{pmatrix}<br>$$</p>
+<p>$k$列同理，做个转置即可。</p>
+<h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><h3 id="规定记号"><a href="#规定记号" class="headerlink" title="规定记号"></a>规定记号</h3><p>$&lt;a_1,…,a_s&gt;$表示$s$个向量张成的子空间。</p>
+<p>等价：${a_1,…,a_s}\cong {b_1,…,b_r}$，当且仅当这两个向量组可以互相线性表出。</p>
+<h3 id="引理和推论"><a href="#引理和推论" class="headerlink" title="引理和推论"></a>引理和推论</h3><p><strong>若${\alpha_1,\alpha_2,…\alpha_r}$可以表出${\beta_1,\beta_2,…\beta_s}$，且$r&lt;s$，那么${\beta_1,\beta_2,…\beta_s}$一定线性相关</strong>。</p>
+<h3 id="子空间"><a href="#子空间" class="headerlink" title="子空间"></a>子空间</h3><p>要证明某个集合是子空间，只需要证明加法和数乘满足封闭性即可。</p>
+<h3 id="线性相关与线性无关"><a href="#线性相关与线性无关" class="headerlink" title="线性相关与线性无关"></a>线性相关与线性无关</h3><p>一般写成$k_1\alpha_1+…+k_s\alpha_s$的形式，然后再去考虑原问题。</p>
+<h3 id="向量组的秩"><a href="#向量组的秩" class="headerlink" title="向量组的秩"></a>向量组的秩</h3><h4 id="推论3"><a href="#推论3" class="headerlink" title="推论3"></a>推论3</h4><p>若向量组$\beta_1,…,\beta_r$可以由向量组$\alpha_1,…,\alpha_s$表出，如果$\beta_1,…,\beta_r$线性无关，那么$r \le s$.</p>
+<h4 id="命题3"><a href="#命题3" class="headerlink" title="命题3"></a>命题3</h4><p>如果向量组(I)可以表出向量组(II)，那么$r(I) \ge r(II)$</p>
+<h4 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h4><p><strong>主对角占优矩阵的行列式不为0</strong></p>
+<h3 id="基和维数"><a href="#基和维数" class="headerlink" title="基和维数"></a>基和维数</h3><p>感觉没啥要注意的了。</p>
+<h3 id="矩阵的秩"><a href="#矩阵的秩" class="headerlink" title="矩阵的秩"></a>矩阵的秩</h3><p>有两个比较重要的式子：<br>$$<br>rank\begin{bmatrix}A\ 0\ 0 \ B\end{bmatrix}=rank(A)+rank(B)\<br>rank\begin{bmatrix}A\ C\ 0 \ B\end{bmatrix} \ge rank(A)+rank(B)\<br>$$<br>剩下的操作都是一些比较基础的，比如说设行或者列的极大线性无关组然后再去进行一些奇怪的操作。</p>
+<h3 id="线性方程组有解"><a href="#线性方程组有解" class="headerlink" title="线性方程组有解"></a>线性方程组有解</h3><p>需要注意的只有$rank(A)=rank(\widetilde{A})$</p>
+<h3 id="齐次线性方程组解的结构"><a href="#齐次线性方程组解的结构" class="headerlink" title="齐次线性方程组解的结构"></a>齐次线性方程组解的结构</h3><p>$A\vec{x}=0$的解集${\vec{x}}$也叫作$W$，有$\dim W=n-rank(A)$，然后是基础解系与解空间：</p>
+<p>$\eta_1,\eta_2,…,\eta_s$彼此线性无关，且可以表示出所有的解，那么就是一个基础解系，这个可以用高斯消元做出来。</p>
+<p><del>剩下的可能也是一些纯运算，感觉没看到什么非常有意思的东西。</del></p>
+<h3 id="非齐次…"><a href="#非齐次…" class="headerlink" title="非齐次…"></a>非齐次…</h3><p>如果是非齐次的话，加一个特解就好了，好像不是考察的重点所以先pass。</p>
+<h2 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h2><h3 id="矩阵乘法"><a href="#矩阵乘法" class="headerlink" title="矩阵乘法"></a>矩阵乘法</h3><p>$A*B$等价于A的列向量*B对应列的对应向量的和，也等价于$B$的行*A的对应行的对应向量的和.</p>
+<h3 id="特殊矩阵"><a href="#特殊矩阵" class="headerlink" title="特殊矩阵"></a>特殊矩阵</h3><p>$P(j,i(k))$表示把第i行*k加到第j行上，或者把第j列*k加到第i列。</p>
+<p>循环位移矩阵 ：<br>$$<br>C=\begin{pmatrix}0\ 1\ 0 \ 0\ 0 …\ 0\0\ 0\ 1\ 0\ 0 … \ 0\…\1\ 0\ 0\ 0\ 0 … \ 0\end{pmatrix}<br>$$</p>
+<ul>
+<li>奇数级斜对称矩阵行列式为0</li>
+<li>幂零矩阵和幂零指数：使$A^l=0$成立的最小正整数$l$.</li>
+</ul>
+<h3 id="矩阵乘积的秩与行列式"><a href="#矩阵乘积的秩与行列式" class="headerlink" title="矩阵乘积的秩与行列式"></a>矩阵乘积的秩与行列式</h3><p>一些比较有意思的东西是用$Ax=0$的解空间去做，从而得出$rank(A)=n-\dim W$</p>
+<p>以及说明一些定义：</p>
+<ul>
+<li>主子式：A的一个行和列的指标对应相等。</li>
+<li>Binet-Cauthy公式：<br>$$<br>|A_{s\times n} \times B_{n\times s}|=f(x)=<br>\begin{cases}<br>0&amp; s&gt;n\<br>A和B中任意s阶子式的乘积&amp; s\le n<br>\end{cases}<br>$$<h3 id="矩阵求逆"><a href="#矩阵求逆" class="headerlink" title="矩阵求逆"></a>矩阵求逆</h3></li>
+</ul>
+<p>$A^{-1}=\frac{1}{|A|}A^*$,$A^*$是伴随矩阵，且$A^*(i,j)=A_{ji}$</p>
+<p>对合矩阵：$A^2=I$，称$A$为对合矩阵。</p>
+<h3 id="矩阵分块"><a href="#矩阵分块" class="headerlink" title="矩阵分块"></a>矩阵分块</h3><p>$AB=A(\beta_1,\beta_2,\cdots,\beta_m)=(A\beta_1,A\beta_2,\cdots,A\beta_m)$</p>
+<ul>
+<li>Sylvester秩不等式：$rank(AB)\ge rank(A)+rank(B)-n$</li>
+<li>Frobenius秩不等式：$rank(ABC) \ge rank(AB)+rank(BC)-rank(B)$</li>
+<li>幂等矩阵：$A^2=A$.</li>
+</ul>
+<p>从这里我们得到了一个非常有意思的做法：</p>
+<p>考虑对矩阵求逆，也就是我们要解一个$A*A^{-1}=I$，那么我们不妨把$A^{-1}$的列向量写出来，然后就等价于有$n$个方程。</p>
+<p>剩下的就是纯代数知识了，我感觉很妙。</p>
+<p>还有一个比较喵的:</p>
+<p>$\forall A_{s\times n},B_{n\times s}$，有$|I_s-AB|=|I_n-BA|$</p>
+<h3 id="正交矩阵"><a href="#正交矩阵" class="headerlink" title="正交矩阵"></a>正交矩阵</h3><p>$T*T’=I$</p>
+<p>施密特正交化：$\beta_i=\alpha_i-\sum_{j=1}^{i-1}\frac{\alpha_i\cdot \beta_j}{\beta_j \cdot \beta_j}\beta_j$</p>
+<p>若A可逆，则$A=T*B$：做法是把A的列向量先正交化再单位化。</p>
+<p>$(\alpha,\beta)$表示两个向量的点积，正交投影即$(\alpha-\alpha_0,\beta)=0,\forall \beta \in U$。</p>
+<p>最小二乘解：$|\beta-Ax_0| \le |\beta-Ax|$，$x_0$就是最小二乘解。</p>
+<h3 id="线性映射"><a href="#线性映射" class="headerlink" title="线性映射"></a>线性映射</h3><p>值域：$\text{Im} f$</p>
+<p>恒等映射：$1_s$表示$\forall x \in S,f(x)=x$</p>
+<p>合成映射：$(fg)(a)=f(g(a))$</p>
+<p>逆映射：$fg=1_{s^{‘}},gf=1_s$，称$g$为$f$的逆映射，记作$f^{-1}$，存在逆映射等价于$f$是双射。</p>
+<p>线性映射$Ax=\beta$，很明显$\text{Im}A=&lt;\alpha_1,\dots,\alpha_s&gt;$，也就是$A$的列空间。</p>
+<p>映射的核：$\text{Ker} \sigma={\alpha \in \mathbb{K}^n|\sigma(\alpha)=0}$</p>
+<p>$\dim \text{Ker}A + \dim \text{Im}A=\dim \mathbb{K^n}$</p>
+<h2 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h2><h3 id="等价"><a href="#等价" class="headerlink" title="等价"></a>等价</h3><p>这一章就是一些定义：</p>
+<ul>
+<li>等价关系：满足传递性，对称性和反身性的二元关系</li>
+<li>等价类，具有等价关系的元素所构成的集合</li>
+<li>划分：若干个不相交的子集的并为全集</li>
+<li>等价类构成的集合记作$\pi \sim (S) $</li>
+<li>商集$S/\sim$：$S$的所有等价类构成的集合，里面的元素是子集而不是元素。</li>
+</ul>
+<h3 id="矩阵的相抵"><a href="#矩阵的相抵" class="headerlink" title="矩阵的相抵"></a>矩阵的相抵</h3><p>$A\sim B$：$A$可以通过初等行|列变化变成$B$。</p>
+<p><strong>Thm1</strong>. 若$rank(A)=r$，则$A\sim^{相抵} \begin{pmatrix}I_r\ \ 0\0 \ \ \  0\end{pmatrix}$</p>
+<p>==定义：==不变量指对于一个等价类中所有元素作用后结果相同，完全不变量指可以完全决定一个等价类</p>
+<p>有两个很有意思的例题：</p>
+<p><strong>例6.</strong> 设$A$是$n$阶对称矩阵，且$rank(A)=r$，那么：</p>
+<ul>
+<li>A至少有一个$r$阶主子式不为0</li>
+<li>A的所有不为0的$r$阶主子式的符号相同</li>
+</ul>
+<p>**例8. **$rank(AB)=rank(A) \Leftrightarrow ABX=A$有解</p>
+<h3 id="广义逆矩阵-选学"><a href="#广义逆矩阵-选学" class="headerlink" title="广义逆矩阵(选学)"></a>广义逆矩阵(选学)</h3><p>目的是为了方便的解出$Ax=\beta$在$|A|=0$时的解</p>
+<p>考虑$AA^{-1}A=A$，所以$A^{-1}$是$AXA=A$的一个解。</p>
+<p>$AXA=A$在$A!=0$的情况下一定有解，而且令$A=P\begin{pmatrix}Ir\ 0\0\ \ \  0\end{pmatrix}Q$，那么特解为$Q^{-1}\begin{pmatrix}Ir\ B\C\ \ \  D\end{pmatrix}P^{-1}$，且记$A^{-}=Q^{-1}\begin{pmatrix}Ir\ B\C\ \ \  D\end{pmatrix}P^{-1}$，这就是广义逆矩阵。</p>
+<p>$Ax=\beta$的通解为$\gamma=A^{-}\beta$</p>
+<p>$Ax=0$的通解是$x=(I-A^{-}A)Z_1$,$Z_1$为$\mathbb{K^n}$的任意列向量。</p>
+<p>所以推论为$Ax=\beta$的通解为$x=A^{-}\beta+(I-A^{-}A)Z_1$</p>
+<p>*<em>Moore-Penrose广义逆($A^{+}$)<em><em>： 为某一个方程组的唯一解，若$A=BC$，通式为$C^</em>(CC^</em>)^{-1}(B^</em>B)^{-1}B^*$。</p>
+<h3 id="矩阵的相似"><a href="#矩阵的相似" class="headerlink" title="矩阵的相似"></a>矩阵的相似</h3><p>$A\sim B \Leftrightarrow P^{-1}AP=B$</p>
+<p>矩阵的迹：<br>$$<br>tr(A)=\sum_{i=1}^na_{ii}<br>$$<br>相似不变量：矩阵的迹，秩，行列式</p>
+<p>注意到迹这个东西非常的有用，可以用它来反证一些结论。</p>
+<blockquote>
+<p> 例题13：若实数域下$A \sim B$不成立，则复数域下也不成立。</p>
+</blockquote>
+<p>可对角化：$A\sim D$</p>
+<p>条件：存在$n$个$\mathbb{K^n}$下的线性无关的列向量$\alpha$，$s.t. A\alpha_i=D_{ii}\alpha_i$</p>
+<h3 id="矩阵的特征值和特征向量"><a href="#矩阵的特征值和特征向量" class="headerlink" title="矩阵的特征值和特征向量"></a>矩阵的特征值和特征向量</h3><p>考虑上述条件有$A\alpha=\lambda\alpha$，称$\lambda$为$A$的特征值，$\alpha$为$A$的特征向量。==注意$alpha \neq 0$==</p>
+<p>求解特征值：$|\lambda I-A|=0$的解。</p>
+<ul>
+<li>几何重数：以$\lambda$作为特征值的特征子空间$U$的$\dim $</li>
+<li>代数重数：特征多项式以$x=\lambda$为解的重数</li>
+</ul>
+<p><strong>几何重数$\le$代数重数</strong></p>
+<h3 id="矩阵可对角化"><a href="#矩阵可对角化" class="headerlink" title="矩阵可对角化"></a>矩阵可对角化</h3><p>充要条件1：存在$n$个线性无关的特征向量 </p>
+<p>充要条件2：每一个特征根的几何重数=代数重数</p>
+<h3 id="实对称矩阵对角化"><a href="#实对称矩阵对角化" class="headerlink" title="实对称矩阵对角化"></a>实对称矩阵对角化</h3><p>实对称矩阵一定可对角化，而且是正交相似于特征值所构成的矩阵。</p>
+<p>即$T^{-1}AT=diag{\lambda_1,\cdots,\lambda_n}$</p>
+<p>其他的证明感觉需要多往数学归纳法上面靠。</p>
+<h2 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h2><h3 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h3><p>矩阵的合同：存在$P$，s.t.<br>$$<br>P’AP=B<br>$$<br>非退化线性替换:<br>$$<br>X=CY<br>$$<br>若$C$是正交矩阵，称为正交替换。</p>
+<h3 id="二次型的标准形"><a href="#二次型的标准形" class="headerlink" title="二次型的标准形"></a>二次型的标准形</h3><p>明显唯一——惯性定理</p>
+<p>正惯性指数：$y_1^2+…+y_p^2-y_{p+1}^2-…-y_r^2$，$p$叫做正惯性指数，$r$为秩，$r-p$为负惯性指数。</p>
+<p>复二次型的标准形只和秩相关。</p>
+<p>正定的性质：</p>
+<p><strong>正定=正惯性指数为$n$=$A \simeq I$=$A$的特征值全部大于$0$=$A$的所有顺序主子式$&gt;0$.</strong></p>
+<p>半正定、负定、半负定类似可得。</p>
+<p>如何判断一个矩阵是不是正定矩阵？用顺序主子式</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>线性代数上册</p><p><a href="https://pku.fexuile.cn/2022/12/27/线性代数上册/">https://pku.fexuile.cn/2022/12/27/线性代数上册/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>fexuile</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2022-12-27</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2022-12-27</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E7%BA%BF%E4%BB%A3/">线代</a><a class="link-muted mr-2" rel="tag" href="/tags/%E6%95%B0%E5%AD%A6/">数学</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2022/12/12/%E5%9C%B0%E9%9C%87%E6%A6%82%E8%AE%BA%E5%A4%8D%E4%B9%A0/"><span class="level-item">地震概论复习</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="valine-thread"></div><script src="//cdn.jsdelivr.net/npm/leancloud-storage@3/dist/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@1.4.16/dist/Valine.min.js"></script><script>new Valine({
+            el: '#valine-thread',
+            appId: "84NgVeXCRnUuFVRqZE6T5ISX-gzGzoHsz",
+            appKey: "KA5KjCCHtuywGhoBYtbs84Dr",
+            
+            avatar: "mm",
+            avatarForce: false,
+            meta: ["nick","mail","link"],
+            pageSize: 10,
+            lang: "zh-CN",
+            visitor: false,
+            highlight: true,
+            recordIP: false,
+            
+            
+            
+            enableQQ: true,
+            requiredFields: [],
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.jpg" alt="fexuile"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">fexuile</p><p class="is-size-6 is-block">Your title</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Peking University</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">3</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">6</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/fexuile" target="_blank" rel="noopener">关注我</a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#第一章"><span class="level-left"><span class="level-item">1</span><span class="level-item">第一章</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#矩阵消元法"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">矩阵消元法</span></span></a></li><li><a class="level is-mobile" href="#解的情况和判别标准"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">解的情况和判别标准</span></span></a></li><li><a class="level is-mobile" href="#数域"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">数域</span></span></a></li></ul></li><li><a class="level is-mobile" href="#第二章"><span class="level-left"><span class="level-item">2</span><span class="level-item">第二章</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#n-元排列"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">$n$元排列</span></span></a></li><li><a class="level is-mobile" href="#行列式"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">行列式</span></span></a></li><li><a class="level is-mobile" href="#行列式的性质"><span class="level-left"><span class="level-item">2.3</span><span class="level-item">行列式的性质</span></span></a></li><li><a class="level is-mobile" href="#行列式求解："><span class="level-left"><span class="level-item">2.4</span><span class="level-item">行列式求解：</span></span></a></li><li><a class="level is-mobile" href="#克拉默-Cramer-法则"><span class="level-left"><span class="level-item">2.5</span><span class="level-item">克拉默(Cramer)法则</span></span></a></li><li><a class="level is-mobile" href="#拉普拉斯定理"><span class="level-left"><span class="level-item">2.6</span><span class="level-item">拉普拉斯定理</span></span></a></li></ul></li><li><a class="level is-mobile" href="#第三章"><span class="level-left"><span class="level-item">3</span><span class="level-item">第三章</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#规定记号"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">规定记号</span></span></a></li><li><a class="level is-mobile" href="#引理和推论"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">引理和推论</span></span></a></li><li><a class="level is-mobile" href="#子空间"><span class="level-left"><span class="level-item">3.3</span><span class="level-item">子空间</span></span></a></li><li><a class="level is-mobile" href="#线性相关与线性无关"><span class="level-left"><span class="level-item">3.4</span><span class="level-item">线性相关与线性无关</span></span></a></li><li><a class="level is-mobile" href="#向量组的秩"><span class="level-left"><span class="level-item">3.5</span><span class="level-item">向量组的秩</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#推论3"><span class="level-left"><span class="level-item">3.5.1</span><span class="level-item">推论3</span></span></a></li><li><a class="level is-mobile" href="#命题3"><span class="level-left"><span class="level-item">3.5.2</span><span class="level-item">命题3</span></span></a></li><li><a class="level is-mobile" href="#扩展"><span class="level-left"><span class="level-item">3.5.3</span><span class="level-item">扩展</span></span></a></li></ul></li><li><a class="level is-mobile" href="#基和维数"><span class="level-left"><span class="level-item">3.6</span><span class="level-item">基和维数</span></span></a></li><li><a class="level is-mobile" href="#矩阵的秩"><span class="level-left"><span class="level-item">3.7</span><span class="level-item">矩阵的秩</span></span></a></li><li><a class="level is-mobile" href="#线性方程组有解"><span class="level-left"><span class="level-item">3.8</span><span class="level-item">线性方程组有解</span></span></a></li><li><a class="level is-mobile" href="#齐次线性方程组解的结构"><span class="level-left"><span class="level-item">3.9</span><span class="level-item">齐次线性方程组解的结构</span></span></a></li><li><a class="level is-mobile" href="#非齐次…"><span class="level-left"><span class="level-item">3.10</span><span class="level-item">非齐次…</span></span></a></li></ul></li><li><a class="level is-mobile" href="#第四章"><span class="level-left"><span class="level-item">4</span><span class="level-item">第四章</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#矩阵乘法"><span class="level-left"><span class="level-item">4.1</span><span class="level-item">矩阵乘法</span></span></a></li><li><a class="level is-mobile" href="#特殊矩阵"><span class="level-left"><span class="level-item">4.2</span><span class="level-item">特殊矩阵</span></span></a></li><li><a class="level is-mobile" href="#矩阵乘积的秩与行列式"><span class="level-left"><span class="level-item">4.3</span><span class="level-item">矩阵乘积的秩与行列式</span></span></a></li><li><a class="level is-mobile" href="#矩阵求逆"><span class="level-left"><span class="level-item">4.4</span><span class="level-item">矩阵求逆</span></span></a></li><li><a class="level is-mobile" href="#矩阵分块"><span class="level-left"><span class="level-item">4.5</span><span class="level-item">矩阵分块</span></span></a></li><li><a class="level is-mobile" href="#正交矩阵"><span class="level-left"><span class="level-item">4.6</span><span class="level-item">正交矩阵</span></span></a></li><li><a class="level is-mobile" href="#线性映射"><span class="level-left"><span class="level-item">4.7</span><span class="level-item">线性映射</span></span></a></li></ul></li><li><a class="level is-mobile" href="#第五章"><span class="level-left"><span class="level-item">5</span><span class="level-item">第五章</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#等价"><span class="level-left"><span class="level-item">5.1</span><span class="level-item">等价</span></span></a></li><li><a class="level is-mobile" href="#矩阵的相抵"><span class="level-left"><span class="level-item">5.2</span><span class="level-item">矩阵的相抵</span></span></a></li><li><a class="level is-mobile" href="#广义逆矩阵-选学"><span class="level-left"><span class="level-item">5.3</span><span class="level-item">广义逆矩阵(选学)</span></span></a></li><li><a class="level is-mobile" href="#矩阵的相似"><span class="level-left"><span class="level-item">5.4</span><span class="level-item">矩阵的相似</span></span></a></li><li><a class="level is-mobile" href="#矩阵的特征值和特征向量"><span class="level-left"><span class="level-item">5.5</span><span class="level-item">矩阵的特征值和特征向量</span></span></a></li><li><a class="level is-mobile" href="#矩阵可对角化"><span class="level-left"><span class="level-item">5.6</span><span class="level-item">矩阵可对角化</span></span></a></li><li><a class="level is-mobile" href="#实对称矩阵对角化"><span class="level-left"><span class="level-item">5.7</span><span class="level-item">实对称矩阵对角化</span></span></a></li></ul></li><li><a class="level is-mobile" href="#第六章"><span class="level-left"><span class="level-item">6</span><span class="level-item">第六章</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#二次型"><span class="level-left"><span class="level-item">6.1</span><span class="level-item">二次型</span></span></a></li><li><a class="level is-mobile" href="#二次型的标准形"><span class="level-left"><span class="level-item">6.2</span><span class="level-item">二次型的标准形</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">fexuileのBlog</a><p class="is-size-7"><span>&copy; 2022 fexuile</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mhchem.min.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
